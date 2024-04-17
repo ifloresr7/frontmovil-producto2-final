@@ -3,7 +3,7 @@
   "setupTasks": [
     {
       "name": "Install Dependencies",
-      "command": "npm i -f"
+      "command": "npm install --force"
     }
   ],
 
@@ -11,7 +11,8 @@
   "tasks": {
     "ng": {
       "name": "ng",
-      "command": "npm run ng"
+      "command": "npm run ng",
+      "runAtStart": false
     },
     "start": {
       "name": "start",
@@ -20,19 +21,23 @@
     },
     "build": {
       "name": "build",
-      "command": "npm run build"
+      "command": "npm run build",
+      "runAtStart": false
     },
     "watch": {
       "name": "watch",
-      "command": "npm run watch"
+      "command": "npm run watch",
+      "runAtStart": false
     },
     "test": {
       "name": "test",
-      "command": "npm run test"
+      "command": "npm run test",
+      "runAtStart": false
     },
     "serve:ssr:angular-team-basket": {
       "name": "serve:ssr:angular-team-basket",
-      "command": "npm run serve:ssr:angular-team-basket"
+      "command": "npm run serve:ssr:angular-team-basket",
+      "runAtStart": false
     }
   }
 }
